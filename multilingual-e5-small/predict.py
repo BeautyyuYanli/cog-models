@@ -11,7 +11,7 @@ import json
 class Predictor(BasePredictor):
     def setup(self) -> None:
         self.model = SentenceTransformer(
-            "intfloat/multilingual-e5-large", cache_folder="cache_models"
+            "intfloat/multilingual-e5-small", cache_folder="cache_models"
         )
 
     def predict(
